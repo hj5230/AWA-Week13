@@ -45,7 +45,7 @@ const bookSchema = new mongoose.Schema({
   },
 });
 
-const Book = mongoose.model("Books", bookSchema);
+const Book = mongoose.model("books", bookSchema);
 
 app.post('/api/book/', (req, res) => {
   const { author, name, pages } = req.body;
