@@ -40,7 +40,6 @@ function Book() {
   const fetchData = async(bookName) => {
     const pro = await fetch('/api/' + bookName)
     const res = await pro.json()
-    console.log(res)
     setBookData(res)
   }
   const params = useParams();
